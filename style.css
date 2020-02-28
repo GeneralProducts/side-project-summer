@@ -158,6 +158,22 @@ strong {
   background-color: #c9cff9;
 }
 
+.badge-editorial {
+  background-color: #c9f9d1;
+}
+
+.badge-marketing {
+  background-color: #f9c9ed;
+}
+
+.badge-rights {
+  background-color: #f2f9c9;
+}
+
+.badge-design {
+  background-color: #c9f7f9;
+}
+
 img {
   width: 100%;
   padding-top: 10px;
