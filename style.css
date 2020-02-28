@@ -23,6 +23,14 @@ a:hover, nav li a:hover {
   box-shadow: 0px -36px 0px #fef0be inset;
 }
 
+a.secondary-link {
+  box-shadow: none;
+}
+
+a:hover.secondary-link {
+  border-bottom: 3px solid black;
+}
+
 header {
   background-color: #ff9a8e;
   height: 50vh;
@@ -114,6 +122,19 @@ footer a:hover {
   border-bottom: 3px solid #ff9a8e
 }
 
+.contributor {
+  color: grey;
+  border-bottom: 3px solid #e8e6e0;
+}
+
+a.social-media-handle {
+   box-shadow: none;
+}
+
+a:hover.social-media-handle {
+  border-bottom: 3px solid black
+}
+
 strong {
   font-weight: 900;
 }
@@ -134,9 +155,13 @@ strong {
 }
 
 .badge-trial-and-error {
-  background-color: palegreen;
+  background-color: #c9cff9;
 }
 
+img {
+  width: 100%;
+  padding-top: 10px;
+}
 
 @media (min-width: 600px) {
   header {
