@@ -46,7 +46,7 @@ nav li {
   padding-right: 100px;
   padding: 20px;
   margin-left: 25px;
-    font-weight: 800;
+  font-weight: 800;
 }
 
 nav li a {
@@ -58,7 +58,7 @@ nav li a {
 
 nav li a:hover {
   box-shadow: none;
-    border-bottom: 3px solid #080808;
+  border-bottom: 3px solid #080808;
 }
 
 h1 {
@@ -95,7 +95,17 @@ footer {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
-    font-weight: 600
+  font-weight: 600
+}
+
+footer a {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+footer a:hover {
+  box-shadow: none;
+  border-bottom: 3px solid black;
 }
 
 @media (max-width: 600px) {
@@ -104,6 +114,6 @@ footer {
   }
 }
 
-.current_page {
+.current-page {
   border-bottom: 3px solid #ff9a8e
 }
