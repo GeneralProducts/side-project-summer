@@ -70,9 +70,13 @@ h1 {
 
 h2 {
   font-size:35px;
-  padding: 30px;
+  padding: 30px 30px 0;
   font-weight: 900;
   font-style: italic;
+}
+
+p {
+  padding: 30px;
 }
 
 section {
@@ -116,4 +120,27 @@ footer a:hover {
 
 .current-page {
   border-bottom: 3px solid #ff9a8e
+}
+
+strong {
+  font-weight: 900;
+}
+
+.badge {
+  padding: 4px 8px;
+  background-color: palegoldenrod;
+  border-radius: 15px;
+  margin: 4px
+}
+
+.badge-intermediate {
+  background-color: paleturquoise;
+}
+
+.badge-beginner {
+  background-color: peachpuff;
+}
+
+.badge-trial-and-error {
+  background-color: palegreen;
 }
