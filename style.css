@@ -1,12 +1,12 @@
 * {
   margin: 0;
-  font-size: 20px;
   font-weight: 700;
   line-height: 40px;
 }
 
 body {
   font-family: Muli, Arial, sans-serif;
+  font-size: 20px;
   color: black;
 }
 
@@ -25,7 +25,7 @@ a:hover, nav li a:hover {
 
 header {
   background-color: #ff9a8e;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,14 +39,15 @@ nav {
 nav ul {
   display: flex;
   flex: 3;
+  flex-direction: column;
 }
 
 nav li {
   list-style-type: "// ";
   padding-right: 100px;
-  padding: 20px;
   margin-left: 25px;
   font-weight: 800;
+  padding: 0;
 }
 
 nav li a {
@@ -63,9 +64,9 @@ nav li a:hover {
 
 h1 {
   color: #fef0be;
-  font-size: 125px;
   font-style: italic;
-  font-weight: 900
+  font-weight: 900;
+  font-size: 9vw
 }
 
 h2 {
@@ -81,14 +82,11 @@ p {
 
 section {
   display: flex;
+  flex-direction: column;
 }
 
 li {
   padding-bottom: 30px;
-}
-
-aside {
-  flex: 1;
 }
 
 main {
@@ -110,12 +108,6 @@ footer a {
 footer a:hover {
   box-shadow: none;
   border-bottom: 3px solid black;
-}
-
-@media (max-width: 600px) {
-  section {
-    flex-direction: column;
-  }
 }
 
 .current-page {
@@ -143,4 +135,27 @@ strong {
 
 .badge-trial-and-error {
   background-color: palegreen;
+}
+
+
+@media (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  section {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    padding: 20px;
+  }
+
+  aside {
+    flex: 1;
+  }
 }
