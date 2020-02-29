@@ -14,21 +14,20 @@ a {
   font-weight: 800;
   color: #080808;
   text-decoration: none;
-  box-shadow: 0px -36px 0px #ffdfda inset;
   padding: 4px;
   border-bottom: 3px solid #ff9a8e;
 }
 
 a:hover, nav li a:hover {
-  box-shadow: 0px -36px 0px #fef0be inset;
+  border-bottom: 3px solid black;
 }
 
 a.secondary-link {
-  box-shadow: none;
+  box-shadow: 0px -36px 0px #ffdfda inset;
 }
 
 a:hover.secondary-link {
-  border-bottom: 3px solid black;
+  box-shadow: 0px -36px 0px #fef0be inset;
 }
 
 header {
@@ -105,7 +104,7 @@ footer {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
-  font-weight: 600
+  font-weight: 600;
 }
 
 footer a {
@@ -128,7 +127,7 @@ footer a:hover {
 }
 
 a.social-media-handle {
-   box-shadow: none;
+  box-shadow: none;
 }
 
 a:hover.social-media-handle {
@@ -142,6 +141,7 @@ strong {
 .badge {
   padding: 4px 8px;
   background-color: rgb(248, 208, 192);
+  color: rgb(107, 90, 83);
   border-radius: 15px;
   margin: 4px;
   font-size: 18px;
@@ -149,39 +149,64 @@ strong {
 
 .badge-intermediate {
   background-color: rgb(189, 243, 243);
+  color: rgb(91, 117, 117);
 }
 
 .badge-beginner {
   background-color: rgb(227, 228, 163);
+  color: rgb(81, 82, 58);
 }
 
 .badge-advanced {
   background-color: pink;
+  color: rgb(104, 78, 83);
 }
 
 .badge-learning-by-doing {
   background-color: rgb(179, 218, 241);
+  color: rgb(57, 70, 78);
 }
 
 .badge-learning-with-others {
-  background-color: rgb(238, 181, 228);
+  background-color: rgb(247, 218, 241);
+  color: rgb(83, 74, 82);
+}
+
+.badge-motivated-by-visuals {
+  background-color: #dae7dc;
+  color: #363a37;
+}
+
+.badge-motivated-by-data {
+  background-color: #dadbe7;
+  color: #464649;
+}
+
+.badge-motivated-by-knowledge {
+  background-color: #e7dadb;
+  color: #524c4d;
 }
 
 .badge-editorial {
   background-color: #c9f9d1;
+  color: #455748;
 }
 
 .badge-marketing {
   background-color: lavender;
+  color: rgb(74, 74, 82);
 }
 
 .badge-rights {
   background-color: thistle;
+  color: rgb(92, 81, 92);
 }
 
 .badge-design {
   background-color: mistyrose;
+  color: rgb(100, 87, 86);
 }
+
 
 img {
   width: 100%;
