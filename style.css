@@ -77,8 +77,13 @@ h1 {
 }
 
 h2 {
-  font-size:35px;
-  padding: 30px 30px 0;
+  font-size: 35px;
+  padding: 40px 30px 10px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h3 {
   font-weight: 900;
   font-style: italic;
 }
