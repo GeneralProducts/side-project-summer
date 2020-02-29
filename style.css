@@ -141,21 +141,30 @@ strong {
 
 .badge {
   padding: 4px 8px;
-  background-color: palegoldenrod;
+  background-color: rgb(248, 208, 192);
   border-radius: 15px;
-  margin: 4px
+  margin: 4px;
+  font-size: 18px;
 }
 
 .badge-intermediate {
-  background-color: paleturquoise;
+  background-color: rgb(189, 243, 243);
 }
 
 .badge-beginner {
-  background-color: peachpuff;
+  background-color: rgb(227, 228, 163);
 }
 
-.badge-trial-and-error {
-  background-color: #c9cff9;
+.badge-advanced {
+  background-color: pink;
+}
+
+.badge-learning-by-doing {
+  background-color: rgb(179, 218, 241);
+}
+
+.badge-learning-with-others {
+  background-color: rgb(238, 181, 228);
 }
 
 .badge-editorial {
@@ -163,15 +172,15 @@ strong {
 }
 
 .badge-marketing {
-  background-color: #f9c9ed;
+  background-color: lavender;
 }
 
 .badge-rights {
-  background-color: #f2f9c9;
+  background-color: thistle;
 }
 
 .badge-design {
-  background-color: #c9f7f9;
+  background-color: mistyrose;
 }
 
 img {
