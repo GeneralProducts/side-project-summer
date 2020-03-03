@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav li {
-  list-style-type: "// ";
+  list-style-type: none;
   padding-right: 100px;
   margin-left: 25px;
   font-weight: 800;
