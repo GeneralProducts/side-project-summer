@@ -57,6 +57,11 @@ nav li {
   padding: 0;
 }
 
+nav li:before {
+  content: "//";
+  padding-right: 12px;
+}
+
 nav li a {
   font-style: italic;
   font-weight: 800;
