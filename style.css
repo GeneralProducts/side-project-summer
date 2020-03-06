@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 40px;
 }
 
@@ -14,12 +14,13 @@ a {
   font-weight: 800;
   color: #080808;
   text-decoration: none;
-  padding: 4px;
+  padding: 0 0 2px;
   border-bottom: 3px solid #ff9a8e;
 }
 
 a:hover, nav li a:hover {
   border-bottom: 3px solid black;
+  color: #ca3a3a;
 }
 
 a.secondary-link {
@@ -30,6 +31,10 @@ a:hover.secondary-link {
   box-shadow: 0px -36px 0px #fef0be inset;
 }
 
+header a:hover {
+  border-bottom: 3px solid #ff9a8e;
+}
+
 header {
   background-color: #ff9a8e;
   height: 50vh;
@@ -38,21 +43,17 @@ header {
   align-items: center;
 }
 
-nav {
-  display: flex;
-  background-color: #ff9a8e52;
+.header--secondary {
+  height: 30vh;
 }
 
-nav ul {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
+nav {
+  background-color: #ff9a8e52;
+  padding: 0 20px;
 }
 
 nav li {
   list-style-type: none;
-  padding-right: 100px;
-  margin-left: 25px;
   font-weight: 800;
   padding: 0;
 }
@@ -78,12 +79,12 @@ h1 {
   color: #fef0be;
   font-style: italic;
   font-weight: 900;
-  font-size: 9vw
+  font-size: 8vw
 }
 
 h2 {
   font-size: 35px;
-  padding: 40px 30px 10px;
+  padding: 40px 0 20px 0;
   font-weight: 900;
   font-style: italic;
 }
@@ -93,28 +94,27 @@ h3 {
   font-style: italic;
 }
 
-p {
-  padding: 30px;
+main {
+  padding: 40px;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 li {
   padding-bottom: 30px;
 }
 
-main {
-  flex: 3;
+p {
+  padding: 30px 0;
 }
 
 footer {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
-  font-weight: 600;
 }
 
 footer a {
@@ -127,21 +127,17 @@ footer a:hover {
   border-bottom: 3px solid black;
 }
 
+footer ul li {
+  display: inline;
+}
+
 .current-page {
   border-bottom: 3px solid #ff9a8e
 }
 
 .contributor {
   color: grey;
-  border-bottom: 3px solid #e8e6e0;
-}
-
-a.social-media-handle {
-  box-shadow: none;
-}
-
-a:hover.social-media-handle {
-  border-bottom: 3px solid black
+  padding: 0;
 }
 
 strong {
@@ -217,30 +213,39 @@ strong {
   color: rgb(100, 87, 86);
 }
 
-
 img {
   width: 100%;
   padding-top: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   header {
     height: 100vh;
   }
 
-  section {
-    flex-direction: row;
-  }
-
   nav ul {
-    flex-direction: row;
+    margin: 0 auto;
+    width: 800px;
+    padding: 0;
+    text-align: center;
   }
 
   nav li {
+    display: inline-block;
+    padding: 20px 40px;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 800px;
     padding: 20px;
   }
 
-  aside {
-    flex: 1;
+  footer {
+    margin-top: 100px;
+  }
+
+  .badge {
+    white-space: nowrap;
   }
 }
