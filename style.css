@@ -37,14 +37,11 @@ header a:hover {
 
 header {
   background-color: #ff9a8e;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header--secondary {
-  height: 30vh;
+  padding: 5%;
+  height: 42px;
 }
 
 nav {
@@ -66,7 +63,7 @@ nav li:before {
 nav li a {
   font-style: italic;
   font-weight: 800;
-  font-size: 110%;
+  font-size: 90%;
   border-bottom: none;
 }
 
@@ -83,8 +80,8 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
-  padding: 40px 0 20px 0;
+  font-size: 28px;
+  padding: 20px 0 0;
   font-weight: 900;
   font-style: italic;
 }
@@ -95,38 +92,21 @@ h3 {
 }
 
 main {
-  padding: 40px;
+  padding: 0 16px 0 20px;
 }
 
 ul {
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 li {
   padding-bottom: 30px;
+  list-style-type: none;
 }
 
 p {
-  padding: 30px 0;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-    padding-bottom: 30px
-}
-
-hr:after {
-    background: #fff;
-    content: '§';
-    padding: 0 4px;
-    position: relative;
-    top: -23px;
+  padding: 15px 0;
 }
 
 footer {
@@ -135,18 +115,9 @@ footer {
   text-align: center;
 }
 
-footer a {
-  border-bottom: none;
-  box-shadow: none;
-}
-
-footer a:hover {
-  box-shadow: none;
-  border-bottom: 3px solid black;
-}
-
 footer ul li {
   display: inline;
+  padding-right: 24px;
 }
 
 .current-page {
@@ -243,6 +214,16 @@ img {
 @media (min-width: 800px) {
   header {
     height: 100vh;
+    padding: 0;
+  }
+
+  .header--secondary {
+    padding: 5%;
+    height: 42px;
+  }
+
+  li {
+    list-style-type: disc;
   }
 
   nav ul {
@@ -255,6 +236,21 @@ img {
   nav li {
     display: inline-block;
     padding: 20px 40px;
+  }
+
+  nav li a {
+    font-size: 110%;
+  }
+
+  h2 {
+    font-size: 35px;
+    padding: 40px 0 20px 0;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  p {
+    padding: 30px 0;
   }
 
   main {
