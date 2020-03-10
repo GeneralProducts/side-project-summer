@@ -23,14 +23,6 @@ a:hover, nav li a:hover {
   color: #ca3a3a;
 }
 
-a.secondary-link {
-  box-shadow: 0px -36px 0px #ffdfda inset;
-}
-
-a:hover.secondary-link {
-  box-shadow: 0px -36px 0px #fef0be inset;
-}
-
 header a:hover {
   border-bottom: 3px solid #ff9a8e;
 }
@@ -140,6 +132,7 @@ strong {
   border-radius: 15px;
   margin: 4px;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .badge-intermediate {
@@ -205,10 +198,6 @@ strong {
 img {
   width: 100%;
   padding-top: 10px;
-}
-
-.badge {
-  white-space: nowrap;
 }
 
 @media (min-width: 800px) {
