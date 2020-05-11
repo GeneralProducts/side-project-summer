@@ -1,4 +1,4 @@
-2020 Side Project Summer website
+# 2020 Side Project Summer website
 
 Contributions welcome! [Here is a PR](https://github.com/GeneralProducts/side-project-summer/pull/1) that you can refer to if you want to add your 2019 or 2020 project to the `showcase.html` page.
 
