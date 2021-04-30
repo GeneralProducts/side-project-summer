@@ -200,6 +200,16 @@ img {
   padding-top: 10px;
 }
 
+figure {
+  display: table;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: top;
+  font-weight: 400;
+}
+
 @media (min-width: 800px) {
   header {
     height: 100vh;
