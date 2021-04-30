@@ -1,3 +1,15 @@
+/* https://colorhunt.co/palette/258170 */
+:root {
+  --primary-color: #fce38a;
+  --tertiary-color: #eaffd0;
+  --brand-color: #ff75a0;
+  --white: #ffffff;
+  --nav-link: #080808;
+  --link: #c63663;
+  --hover: #f72164;
+  --header: #000;
+}
+
 * {
   margin: 0;
   font-weight: 800;
@@ -12,23 +24,24 @@ body {
 
 a {
   font-weight: 800;
-  color: #080808;
+  color: var(--link);
   text-decoration: none;
   padding: 0 0 2px;
-  border-bottom: 3px solid #ff9a8e;
+  border-bottom: 3px solid transparent;
 }
 
 a:hover, nav li a:hover {
   border-bottom: 3px solid black;
-  color: #ca3a3a;
+  color: var(--hover);
 }
 
 header a:hover {
-  border-bottom: 3px solid #ff9a8e;
+  border-bottom: 3px solid transparent;
 }
 
 header {
-  background-color: #ff9a8e;
+  background-color: var(--brand-color);
+background: linear-gradient(180deg, rgba(255,94,144,1) 0%, rgba(247,99,146,1) 56%, rgba(255,161,190,1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +50,9 @@ header {
 }
 
 nav {
-  background-color: #ff9a8e52;
+  background-color: var(--primary-color);
   padding: 0 20px;
+  color: var(--nav-link);
 }
 
 nav li {
@@ -57,6 +71,7 @@ nav li a {
   font-weight: 800;
   font-size: 90%;
   border-bottom: none;
+  color: var(--nav-link);
 }
 
 nav li a:hover {
@@ -65,7 +80,7 @@ nav li a:hover {
 }
 
 h1 {
-  color: #fef0be;
+  color: var(--header);
   font-style: italic;
   font-weight: 900;
   font-size: 8vw
@@ -89,7 +104,7 @@ main {
 
 ul {
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
 }
 
 li {
@@ -102,7 +117,8 @@ p {
 }
 
 footer {
-  background-color: #f1f1f1;
+  background-color: var(--tertiary-color);
+  background: linear-gradient(180deg, rgba(234,255,208,1) 0%, rgba(149,225,211,1) 100%);
   padding: 10px;
   text-align: center;
 }
@@ -113,7 +129,7 @@ footer ul li {
 }
 
 .current-page {
-  border-bottom: 3px solid #ff9a8e
+  border-bottom: 3px solid var(--brand-color);
 }
 
 .contributor {
@@ -128,7 +144,7 @@ strong {
 .badge {
   padding: 4px 8px;
   background-color: rgb(248, 208, 192);
-  color: rgb(107, 90, 83);
+  color: rgb(128, 93, 78);
   border-radius: 15px;
   margin: 4px;
   font-size: 18px;
@@ -137,37 +153,37 @@ strong {
 
 .badge-intermediate {
   background-color: rgb(189, 243, 243);
-  color: rgb(91, 117, 117);
+  color: rgb(31, 143, 143);
 }
 
 .badge-beginner {
   background-color: rgb(227, 228, 163);
-  color: rgb(81, 82, 58);
+  color: rgb(134, 139, 27)
 }
 
 .badge-advanced {
   background-color: pink;
-  color: rgb(104, 78, 83);
+  color: rgb(156, 64, 82);
 }
 
 .badge-learning-by-doing {
   background-color: rgb(179, 218, 241);
-  color: rgb(57, 70, 78);
+  color: rgb(62, 92, 110);
 }
 
 .badge-learning-with-others {
   background-color: rgb(247, 218, 241);
-  color: rgb(83, 74, 82);
+  color: rgb(129, 68, 121);
 }
 
 .badge-motivated-by-visuals {
   background-color: #dae7dc;
-  color: #363a37;
+  color: #3c7c4b;
 }
 
 .badge-motivated-by-data {
   background-color: #dadbe7;
-  color: #464649;
+  color: #43437a;
 }
 
 .badge-motivated-by-knowledge {
@@ -182,17 +198,17 @@ strong {
 
 .badge-marketing {
   background-color: lavender;
-  color: rgb(74, 74, 82);
+  color: rgb(75, 75, 131);
 }
 
 .badge-rights {
   background-color: thistle;
-  color: rgb(92, 81, 92);
+  color: rgb(138, 70, 138);
 }
 
 .badge-design {
   background-color: mistyrose;
-  color: rgb(100, 87, 86);
+  color: rgb(185, 86, 78);
 }
 
 img {
